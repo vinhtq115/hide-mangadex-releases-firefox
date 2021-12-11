@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+</head>
+<body>
+    <form>
+        <h1>Hide release groups in MangaDex</h1>
+        <label for="hidden-groups">Hide releases from these groups:</label><br/>
+        <textarea id="hidden-groups" placeholder="Insert group names here. One name per line."
+                  style="min-width: 20%; max-width: 100%"></textarea>
+        <br/>
+        <h1>Hide uploaders in MangaDex</h1>
+        <label for="hidden-uploaders">Hide releases from these uploaders:</label><br/>
+        <textarea id="hidden-uploaders" placeholder="Insert uploaders names here. One name per line."
+                  style="min-width: 20%; max-width: 100%"></textarea>
+        <br/><br/>
+        <button type="submit">Save</button>
+    </form>
+    <script src="options.js"></script>
+</body>
+</html>

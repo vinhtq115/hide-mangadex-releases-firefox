@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Hide Mangadex Releases",
+	"version": "0.9",
+	"author": "Vinh Q. Tran",
+	"description": "Hide releases from specific groups and uploaders on Mangadex",
+
+	"options_ui": {
+		"page": "options.html"
+	},
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"permissions": ["storage", "webRequest", "webRequestBlocking", "https://mangadex.org/*", "https://api.mangadex.org/*"],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{cd4977a6-adea-4a19-ac9f-4a74677fdf48}"
+		}
+	}
+
+}
