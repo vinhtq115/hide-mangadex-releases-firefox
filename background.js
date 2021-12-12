@@ -33,9 +33,9 @@ function listener(details) {
 				var uploader = "";
 				
 				for (let j = 0; j < Object.keys(relationships).length; j++) {
-					if (relationships[j].type == "scanlation_group") {
+					if (relationships[j].type == "scanlation_group" && "attributes" in relationships[j]) {
 						group = relationships[j].attributes.name;
-					} else if (relationships[j].type == "user") {
+					} else if (relationships[j].type == "user" && "attributes" in relationships[j]) {
 						uploader = relationships[j].attributes.username;
 					}
 				}
@@ -99,6 +99,6 @@ function onGot(item) {
 
 browser.webRequest.onBeforeRequest.addListener(
 	listener,
-	{urls: ["https://api.mangadex.org/manga/*/feed?*"], types: ["xmlhttprequest"]},
+	{urls: ["https://api.mangadex.org/manga/*/feed?*", "https://api.mangadex.org/chapter?*"], types: ["xmlhttprequest"]},
 	["blocking"]
 );
