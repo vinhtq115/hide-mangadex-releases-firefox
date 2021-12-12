@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Hide Mangadex Releases",
-	"version": "0.91",
+	"version": "0.92",
 	"author": "Vinh Q. Tran",
 	"description": "Hide releases from specific groups and uploaders on Mangadex",
 

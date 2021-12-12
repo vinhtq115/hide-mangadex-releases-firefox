@@ -99,6 +99,6 @@ function onGot(item) {
 
 browser.webRequest.onBeforeRequest.addListener(
 	listener,
-	{urls: ["https://api.mangadex.org/manga/*/feed?*", "https://api.mangadex.org/chapter?*"], types: ["xmlhttprequest"]},
+	{urls: ["https://api.mangadex.org/manga/*/feed?*", "https://api.mangadex.org/chapter?*", "https://api.mangadex.org/user/follows/manga/feed?*"], types: ["xmlhttprequest"]},
 	["blocking"]
 );
